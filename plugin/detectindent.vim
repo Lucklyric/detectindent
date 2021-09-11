@@ -34,7 +34,7 @@ if !exists("g:detectindent_verbosity")
 endif
 
 fun! <SID>HasCStyleComments()
-    let l:c_style_comment_filetypes = ["arduino", "c", "cpp", "h", "java", "javascript", "php"]
+    let l:c_style_comment_filetypes = ["arduino", "c", "cpp", "h", "java", "javascript", "php", "solidity"]
     return index(l:c_style_comment_filetypes, &filetype) != -1
 endfun
 
